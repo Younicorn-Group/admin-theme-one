@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="styles/fontawesome.min.css"> -->
+  <link rel="stylesheet" href="styles/all.min.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bolder" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div class="input-group">
+              <select class="form-select bg-transparent border-0" id="inputGroupSelect01">
+                <option>Choose...</option>
+                <option selected value="1">English</option>
+                <option value="2">Marathi</option>
+                <option value="3">Hindi</option>
+              </select>
+            </div>
+            <button class="btn btn-lg"><i class="fa fa-envelope"></i></button>
+            <button class="btn btn-lg"><i class="fa fa-bars"></i></button>
+            <button class="btn btn-lg"><i class="fa fa-cog"></i></button>
+
+            
+
+            <div class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
+              <div class="profile d-flex align-items-center">
+                <img src="img/jane.png" alt="" height="30" class="rounded-circle me-3">
+                <div class="status text-success">Online!</div>
+              </div>
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Jane Doe</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="details d-flex flex-column align-items-center">
+                  <img src="img/jane.png" alt="" width="100" class="rounded-circle mb-3">
+                  <h6 class="fw-bold">Project Manager</h6>
+                  <h6 class="text-success">Online!</h6>
+                </div>
+                <br>
+                <div class="memo">
+                  <h4 class="title fw-bolder text-center">Daily Memo</h4>
+                  <hr>
+                  <div class="d-flex align-items-center justify-content-between bg-light p-3 border-bottom border-dark">
+                    <h6 class="mb-0">Assigned Projects</h6>
+                    <h6 class="mb-0">7</h6>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between bg-light p-3 border-bottom border-dark">
+                    <h6 class="mb-0">Brand Meetings</h6>
+                    <h6 class="mb-0">3</h6>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between bg-light p-3 border-bottom border-dark">
+                    <h6 class="mb-0">Team Meetings</h6>
+                    <h6 class="mb-0">5</h6>
+                  </div>
+                </div>
+                <br>
+                <div class="inbox">
+                  <h4 class="title fw-bolder text-center">Inbox</h4>
+                  <hr>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <i>You have received male from John Doe...</i>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          <i>Janice has invited you for the meeting...</i>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Sam has sent you an enquiry, please...
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="main">
+    <div class="container-fluid">
+      <div class="row px-3 py-3">
+        <div class="col bg-light rounded-3 p-3" style="border: 1px solid lightgray">
+          <h4 class="title">Projects</h4>
+          <hr>
+          <label for="progress-bar" class="fw-bold">Website Development:</label>
+          <div class="progress my-4 mt-0">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <label for="progress-bar" class="fw-bold">Graphic Designing:</label>
+          <div class="progress my-4 mt-0">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <label for="progress-bar" class="fw-bold">Sales & Marketing:</label>
+          <div class="progress my-4 mt-0">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <label for="progress-bar" class="fw-bold">Brand Meetings:</label>
+          <div class="progress my-4 mt-0">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col bg-light rounded-3 p-3 mx-3" style="border: 1px solid lightgray">
+          <h4 class="title">Create Meeting</h4>
+          <hr>
+          <form>
+            <div class="mb-1">
+              <label for="exampleInputName1" class="form-label fw-bold">Meeting Title: </label>
+              <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+            </div>
+            <div class="mb-1">
+              <label for="exampleInputEmail1" class="form-label fw-bold">Invite By Email Id:</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 d-flex justify-content-between">
+              <div>
+                <label for="exampleInputDate1" class="form-label fw-bold">Set Time </label>
+                <input type="date" class="form-control" id="exampleInputDate1" aria-describedby="nameHelp">
+              </div>
+              <div>
+                <label for="exampleInputDate1" class="form-label fw-bold">Set Date </label>
+                <input type="time" class="form-control" id="exampleInputDate1" aria-describedby="nameHelp">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Create Meeting</button>
+
+          </form>
+        </div>
+        <div class="col bg-light rounded-3 p-3" style="border: 1px solid lightgray">
+          <h4 class="title">Company Investements</h4>
+          <hr>
+          <div class="row">
+            <div class="col p-3 m-3 shadow">
+              <h6>Digitals</h6>
+              <h5 class="text-danger">₹ 3,500 Cr <i class="fa fa-caret-down"></i></h5>
+            </div>
+            <div class="col p-3 m-3 shadow">
+              <h6>Ed-Tech</h6>
+              <h5 class="text-success">₹ 9,350 Cr <i class="fa fa-caret-up"></i></h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col p-3 m-3 shadow">
+              <h6>Startup</h6>
+              <h5 class="text-success">₹ 1,500 Cr <i class="fa fa-caret-up"></i></h5>
+            </div>
+            <div class="col p-3 m-3 shadow">
+              <h6>Industry</h6>
+              <h5 class="text-danger">₹ 2,350 Cr <i class="fa fa-caret-up"></i></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row px-3 py-3 pt-0">
+        <div class="col bg-light rounded-3 p-3 me-2" style="border: 1px solid lightgray">
+          <h4 class="title">Project Details</h4>
+          <hr>
+          <div class="row mx-2 my-4">
+            <div class="col text-center shadow p-3">
+              <h6 class="fw-bold">Total Projects</h6>
+              <h6><i class="fa fa-briefcase"></i></h6>
+              <h6 class="fw-bold mb-0">135</h6>
+            </div>
+            <div class="col text-center shadow p-3 mx-3">
+              <h6 class="fw-bold">Total Tasks</h6>
+              <h6><i class="fa fa-pen-alt"></i></h6>
+              <h6 class="fw-bold mb-0">55</h6>
+            </div>
+            <div class="col text-center shadow p-3">
+              <h6 class="fw-bold">Team Members</h6>
+              <h6><i class="fa fa-users"></i></h6>
+              <h6 class="fw-bold mb-0">20</h6>
+            </div>
+          </div>
+          <div class="row mx-2 my-2">
+            <div class="col text-center shadow p-3">
+              <h6 class="fw-bold">Projects Completed</h6>
+              <h6><i class="fa fa-check"></i></h6>
+              <h6 class="fw-bold mb-0 text-success">235</h6>
+            </div>
+            <div class="col text-center shadow p-3 mx-3">
+              <h6 class="fw-bold">Invested Amount</h6>
+              <h6><i class="fa fa-money-bill"></i></h6>
+              <h6 class="fw-bold mb-0 text-warning">₹ 55,000 Cr</h6>
+            </div>
+            <div class="col text-center shadow p-3">
+              <h6 class="fw-bold">Pending Tasks</h6>
+              <h6><i class="fa fa-pen"></i></h6>
+              <h6 class="fw-bold mb-0 text-danger">20</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col bg-light rounded-3 p-3 ms-2" style="border: 1px solid lightgray">
+          <h4 class="title">Speed Dail</h4>
+          <hr>
+          <div class="row mx-2 my-4">
+            <div class="col text-center shadow p-4">
+              <img src="img/john.png" alt="" width="100" class="rounded-circle">
+              <h5 class="mb-0 mt-2 fw-bold">John Doe</h5>
+              <h6 class="my-1">Project Manager</h6>
+              <button class="mt-1 btn btn-primary btn-sm"><i class="fa fa-phone-alt me-2"></i> Add Call</button>
+            </div>
+            <div class="col text-center shadow mx-3 p-4">
+              <img src="img/jane.png" alt="" width="100" class="rounded-circle">
+              <h5 class="mb-0 mt-2 fw-bold">John Doe</h5>
+              <h6 class="my-1">Senior Manager</h6>
+              <button class="mt-1 btn btn-primary btn-sm"><i class="fa fa-phone-alt me-2"></i> Add Call</button>
+            </div>
+            <div class="col text-center shadow p-4">
+              <img src="img/john.png" alt="" width="100" class="rounded-circle">
+              <h5 class="mb-0 mt-2 fw-bold">Charles Doe</h5>
+              <h6 class="my-1">Team Lead</h6>
+              <button class="mt-1 btn btn-primary btn-sm"><i class="fa fa-phone-alt me-2"></i> Add Call</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional JS -->
+  <script type="text/javascript" src="/main.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/all.min.js"></script>
+</body>
+
+</html>
